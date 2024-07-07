@@ -244,6 +244,7 @@ footer {
 
     .body {
       width: 95%;
+      margin-left: 12px;
     }
 
     .hero {
@@ -259,17 +260,22 @@ footer {
         width: 90%;
     }
 
+    p {
+        font-size: 0.7rem;
+    }
+
     .m-image {
         width: 30%;
     }
 
     .skill-cont {
         width: 100%;
-        align-items: center;
+        gap: 10px;
     }
 
     .skills {
         width: 95%;
+        gap: 5px;
     }
 
     .column {
