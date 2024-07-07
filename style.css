@@ -1,0 +1,366 @@
+/* Global styles */
+html, body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-image: url(./images/matrixx.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-behavior: smooth scroll;
+    background-attachment: fixed;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
+.hero h1 {
+    position: relative;
+    font-family: 'Lucida Console', monospace;
+    color: whitesmoke;
+    font-size: 4.5rem;
+    margin: 0;
+    z-index: 1; 
+}
+
+p {
+    font-family: 'Lucida Console', monospace;
+    color: whitesmoke;
+    z-index: 1;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-family: 'Lucida Console', monospace;
+    color: #03A062;
+    z-index: 1;
+}
+
+.skill-head {
+    margin-bottom: 70px;
+}
+
+h3 {
+    font-family: 'Lucida Console', monospace;
+    color: #03A062;
+    margin: 0;
+}
+
+h3:hover {
+    color: #e0f002;
+}
+
+/* Body Styles */
+.body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.m-image {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    width: 10%;
+    border: 3px solid #03A062 ;
+}
+
+.skills {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.skill-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 40px;
+    gap: 65px;
+}
+
+.skillset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+h3 > span {
+    color: rgb(88, 87, 87);
+}
+
+span {
+    color: #e0f002;
+}
+
+.banner {
+    background-color: #03A062;
+    width: 100%;
+    height: 250px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.ban-head {
+    font-family: 'Lucida Console', monospace;
+    text-align: center;
+}
+
+button {
+    margin-top: 25px;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 0;
+    font-family: monospace;
+    background-color: #03A062;
+    border: none;
+    color: #e0f002;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0f002;
+    color: #03A062;
+}
+
+.projects {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+}
+
+a {
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top: 10px;
+    color:#03A062;
+}
+
+a:hover {
+    color: #e0f002;
+    padding-right: 10px;
+}
+
+svg {
+    color: white;
+    width: 20px;
+    padding-left: 10px;
+}
+
+.contact {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.con-info {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    justify-content: space-between;
+}
+
+/* Responsiveness */
+/* Styles for devices with a viewport width up to 600px */
+@media screen and (max-width: 601px) {
+    html {
+        align-items: center;
+    }
+    
+    body {
+        align-content: center;
+    }
+
+    .body {
+      width: 95%;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    .m-image {
+        width: 30%;
+    }
+
+    .skill-cont {
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills {
+        width: 95%;
+    }
+
+    .column {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .user {
+        text-align: center;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    button {
+        margin-left: 30px;
+    }
+
+    .project-head {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .projects {
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .ban-head {
+        line-height: 1.5;
+    }
+
+    .con-info {
+        font-size: 1rem;
+    }
+
+    footer {
+        align-items: center;
+        text-align: center;
+        margin-left: 12px;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+  }
+  
+  /* Styles for devices with a viewport width between 601px and 1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+      width: 100%;
+    }
+    .body {
+        position: relative;
+        align-items: center;
+    }
+
+    .m-image {
+        width: 35%;
+    }
+
+    .skills {
+        margin-left: 30px;
+    }
+
+    .column {
+        width: 50%;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .user {
+        text-align: center;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+    .banner {
+        width: 100%;
+    }
+
+    .projects {
+        margin-left: 20px;
+    }
+  }
+  
+  
